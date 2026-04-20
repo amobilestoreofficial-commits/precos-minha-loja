@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela de Preços • Mobile Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { 
+      font-family: 'Inter', system-ui, sans-serif; 
+    }
+    .hero-bg { 
+      background: linear-gradient(135deg, #0a0a0a, #171717); 
+    }
+    .card { 
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+      background-color: #111111;
+    }
+    .card:hover { 
+      transform: translateY(-6px); 
+      box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+    }
+    .price-vista { 
+      font-size: 1.35rem; 
+      font-weight: 700; 
+      color: #ffffff; 
+    }
+    .price-pix { 
+      font-size: 1.1rem; 
+      color: #a1a1aa; 
+    }
+    .section-title { 
+      font-size: 2.5rem; 
+      font-weight: 700; 
+      letter-spacing: -1px; 
+      color: #ffffff; 
+    }
+    .text-muted { 
+      color: #71717a; 
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <!-- HEADER -->
+  <header class="hero-bg sticky top-0 z-50 border-b border-zinc-800 shadow-xl">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <!-- Logo da Mobile Store -->
+        <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-black text-5xl font-black tracking-tighter">
+          M
+        </div>
+        <div>
+          <h1 class="text-4xl font-bold tracking-tighter">MOBILE STORE</h1>
+          <p class="text-zinc-400 text-sm -mt-1">Quaraí • Rio Grande do Sul</p>
+        </div>
+      </div>
+      <div class="text-right">
+        <p class="text-sm text-zinc-400">Tabela de Preços Atualizada</p>
+        <p class="text-3xl font-semibold text-white">Abril 2026</p>
+      </div>
+    </div>
+
+    <!-- MENU NAV -->
+    <nav class="max-w-7xl mx-auto px-6 pb-6 flex gap-x-8 text-sm font-medium overflow-x-auto border-t border-zinc-800 pt-4">
+      <a href="#iphones-novos" class="hover:text-white flex items-center gap-2 text-zinc-300"><i class="fa-solid fa-mobile-screen-button"></i> iPhones Novos</a>
+      <a href="#iphones-seminovos" class="hover:text-white flex items-center gap-2 text-zinc-300"><i class="fa-solid fa-mobile-screen-button"></i> iPhones Seminovos</a>
+      <a href="#ipads" class="hover:text-white flex items-center gap-2 text-zinc-300"><i class="fa-solid fa-tablet-screen-button"></i> iPads</a>
+      <a href="#watches" class="hover:text-white flex items-center gap-2 text-zinc-300"><i class="fa-solid fa-watch"></i> Watches</a>
+      <a href="#macbooks" class="hover:text-white flex items-center gap-2 text-zinc-300"><i class="fa-solid fa-laptop"></i> MacBooks</a>
+      <a href="#acessorios" class="hover:text-white flex items-center gap-2 text-zinc-300"><i class="fa-solid fa-plug"></i> Acessórios</a>
+    </nav>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-6 py-10">
+    <!-- AVISO GERAL -->
+    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-8 mb-12 text-center">
+      <p class="text-white text-xl font-semibold">📦 Todos os iPhones e iPads novos acompanham:</p>
+      <p class="text-zinc-300 mt-2">Carregador 20W + Capa de brinde</p>
+      <p class="text-zinc-500 mt-6 text-sm">iPhones seminovos acompanham: caixa, cabo, manual, chave SIM, carregador 20W + capa de brinde</p>
+    </div>
+
+    <!-- IPHONES NOVOS -->
+    <section id="iphones-novos" class="mb-20">
+      <h2 class="section-title flex items-center gap-4 mb-10">iPhones Novos</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- iPhone 16e -->
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <div class="flex justify-between mb-6">
+            <div>
+              <p class="text-2xl font-bold">iPhone 16e</p>
+              <span class="inline-block bg-zinc-700 text-white text-xs px-4 py-1 rounded-2xl mt-2">A18</span>
+            </div>
+            <img src="https://picsum.photos/id/1015/160/160" alt="iPhone 16e" class="w-36 h-36 object-contain">
+          </div>
+          <div class="space-y-5">
+            <div class="flex justify-between items-center border-b border-zinc-800 pb-4">
+              <div class="text-lg">128GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 3.899,90</div>
+                <div class="price-pix">PIX R$ 3.799,90</div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="text-lg">256GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 4.599,90</div>
+                <div class="price-pix">PIX R$ 4.499,90</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- iPhone 17e -->
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <div class="flex justify-between mb-6">
+            <div>
+              <p class="text-2xl font-bold">iPhone 17e</p>
+              <span class="inline-block bg-zinc-700 text-white text-xs px-4 py-1 rounded-2xl mt-2">A19</span>
+            </div>
+            <img src="https://picsum.photos/id/1016/160/160" alt="iPhone 17e" class="w-36 h-36 object-contain">
+          </div>
+          <div class="space-y-5">
+            <div class="flex justify-between items-center border-b border-zinc-800 pb-4">
+              <div class="text-lg">256GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 4.899,90</div>
+                <div class="price-pix">PIX R$ 4.799,90</div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="text-lg">512GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 5.599,90</div>
+                <div class="price-pix">PIX R$ 5.499,90</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- iPhone 14 -->
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <div class="flex justify-between mb-6">
+            <div>
+              <p class="text-2xl font-bold">iPhone 14</p>
+              <span class="inline-block bg-zinc-700 text-white text-xs px-4 py-1 rounded-2xl mt-2">A15 Bionic</span>
+            </div>
+            <img src="https://picsum.photos/id/1018/160/160" alt="iPhone 14" class="w-36 h-36 object-contain">
+          </div>
+          <div class="space-y-5">
+            <div class="flex justify-between items-center border-b border-zinc-800 pb-4">
+              <div class="text-lg">128GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 3.899,90</div>
+                <div class="price-pix">PIX R$ 3.799,90</div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="text-lg">256GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 4.699,90</div>
+                <div class="price-pix">PIX R$ 4.599,90</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- iPhone 15 -->
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <div class="flex justify-between mb-6">
+            <div>
+              <p class="text-2xl font-bold">iPhone 15</p>
+              <span class="inline-block bg-zinc-700 text-white text-xs px-4 py-1 rounded-2xl mt-2">A16 Bionic</span>
+            </div>
+            <img src="https://picsum.photos/id/102/160/160" alt="iPhone 15" class="w-36 h-36 object-contain">
+          </div>
+          <div class="space-y-5">
+            <div class="flex justify-between items-center border-b border-zinc-800 pb-4">
+              <div class="text-lg">128GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 4.399,90</div>
+                <div class="price-pix">PIX R$ 4.299,90</div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="text-lg">256GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 5.199,90</div>
+                <div class="price-pix">PIX R$ 5.099,90</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- iPhone 16 -->
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <div class="flex justify-between mb-6">
+            <div>
+              <p class="text-2xl font-bold">iPhone 16</p>
+              <span class="inline-block bg-zinc-700 text-white text-xs px-4 py-1 rounded-2xl mt-2">A18</span>
+            </div>
+            <img src="https://picsum.photos/id/201/160/160" alt="iPhone 16" class="w-36 h-36 object-contain">
+          </div>
+          <div class="space-y-5">
+            <div class="flex justify-between items-center border-b border-zinc-800 pb-4">
+              <div class="text-lg">128GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 4.899,90</div>
+                <div class="price-pix">PIX R$ 4.799,90</div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="text-lg">256GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 5.399,90</div>
+                <div class="price-pix">PIX R$ 5.299,90</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- iPhone 17 -->
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <div class="flex justify-between mb-6">
+            <div>
+              <p class="text-2xl font-bold">iPhone 17</p>
+              <span class="inline-block bg-zinc-700 text-white text-xs px-4 py-1 rounded-2xl mt-2">A18</span>
+            </div>
+            <img src="https://picsum.photos/id/29/160/160" alt="iPhone 17" class="w-36 h-36 object-contain">
+          </div>
+          <div class="space-y-5">
+            <div class="flex justify-between items-center border-b border-zinc-800 pb-4">
+              <div class="text-lg">256GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 5.899,90</div>
+                <div class="price-pix">PIX R$ 5.799,90</div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="text-lg">512GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 7.099,90</div>
+                <div class="price-pix">PIX R$ 6.999,90</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- iPhone Air -->
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <div class="flex justify-between mb-6">
+            <div>
+              <p class="text-2xl font-bold">iPhone Air</p>
+              <span class="inline-block bg-zinc-700 text-white text-xs px-4 py-1 rounded-2xl mt-2">A19 Pro</span>
+            </div>
+            <img src="https://picsum.photos/id/30/160/160" alt="iPhone Air" class="w-36 h-36 object-contain">
+          </div>
+          <div class="space-y-5">
+            <div class="flex justify-between items-center border-b border-zinc-800 pb-4">
+              <div class="text-lg">256GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 6.199,90</div>
+                <div class="price-pix">PIX R$ 6.099,90</div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center border-b border-zinc-800 pb-4">
+              <div class="text-lg">512GB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 8.499,90</div>
+                <div class="price-pix">PIX R$ 8.399,90</div>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="text-lg">1TB</div>
+              <div class="text-right">
+                <div class="price-vista">R$ 9.999,90</div>
+                <div class="price-pix">PIX R$ 9.899,90</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- iPhone 17 Pro / Pro Max -->
+        <div class="card rounded-3xl p-8 border border-zinc-800 col-span-1 lg:col-span-2">
+          <h3 class="text-2xl font-bold mb-8">iPhone 17 Pro • 17 Pro Max</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <p class="font-semibold mb-6 text-lg">iPhone 17 Pro</p>
+              <div class="space-y-5 text-lg">
+                <div class="flex justify-between"><span>256GB</span><span class="text-right"><span class="price-vista">R$ 8.299,90</span><br><span class="price-pix">PIX R$ 8.199,90</span></span></div>
+                <div class="flex justify-between"><span>512GB</span><span class="text-right"><span class="price-vista">R$ 10.299,90</span><br><span class="price-pix">PIX R$ 10.199,90</span></span></div>
+                <div class="flex justify-between"><span>1TB</span><span class="text-right"><span class="price-vista">R$ 11.199,90</span><br><span class="price-pix">PIX R$ 11.099,90</span></span></div>
+                <div class="flex justify-between"><span>2TB</span><span class="text-right"><span class="price-vista">R$ 13.599,90</span><br><span class="price-pix">PIX R$ 13.499,90</span></span></div>
+              </div>
+            </div>
+            <div>
+              <p class="font-semibold mb-6 text-lg">iPhone 17 Pro Max</p>
+              <div class="space-y-5 text-lg">
+                <div class="flex justify-between"><span>256GB</span><span class="text-right"><span class="price-vista">R$ 8.999,90</span><br><span class="price-pix">PIX R$ 8.899,90</span></span></div>
+                <div class="flex justify-between"><span>512GB</span><span class="text-right"><span class="price-vista">R$ 11.099,90</span><br><span class="price-pix">PIX R$ 10.999,90</span></span></div>
+                <div class="flex justify-between"><span>1TB</span><span class="text-right"><span class="price-vista">R$ 11.899,90</span><br><span class="price-pix">PIX R$ 11.799,90</span></span></div>
+                <div class="flex justify-between"><span>2TB</span><span class="text-right"><span class="price-vista">R$ 13.899,90</span><br><span class="price-pix">PIX R$ 13.799,90</span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IPHONES SEMINOVOS -->
+    <section id="iphones-seminovos" class="mb-20">
+      <h2 class="section-title flex items-center gap-4 mb-10">iPhones Seminovos</h2>
+      <div class="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
+        <table class="w-full">
+          <thead class="bg-zinc-950">
+            <tr>
+              <th class="text-left p-6 font-medium text-zinc-300">Modelo</th>
+              <th class="text-right p-6 font-medium text-zinc-300">À Vista</th>
+              <th class="text-right p-6 font-medium text-zinc-300">PIX</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-zinc-800 text-lg">
+            <tr><td class="p-6">iPhone 13 128GB</td><td class="p-6 text-right">R$ 2.699,90</td><td class="p-6 text-right text-emerald-400">R$ 2.599,90</td></tr>
+            <tr><td class="p-6">iPhone 14 128GB</td><td class="p-6 text-right">R$ 2.999,90</td><td class="p-6 text-right text-emerald-400">R$ 2.899,90</td></tr>
+            <tr><td class="p-6">iPhone 15 128GB</td><td class="p-6 text-right">R$ 3.599,90</td><td class="p-6 text-right text-emerald-400">R$ 3.499,90</td></tr>
+            <tr><td class="p-6">iPhone 15 Plus 128GB</td><td class="p-6 text-right">R$ 3.999,90</td><td class="p-6 text-right text-emerald-400">R$ 3.899,90</td></tr>
+            <tr><td class="p-6">iPhone 16 128GB</td><td class="p-6 text-right">R$ 4.599,90</td><td class="p-6 text-right text-emerald-400">R$ 4.499,90</td></tr>
+            <tr><td class="p-6">iPhone 16 Plus 128GB</td><td class="p-6 text-right">R$ 4.999,90</td><td class="p-6 text-right text-emerald-400">R$ 4.899,90</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-2xl font-bold mt-12 mb-6 text-white">iPhones Seminovos Pro</h3>
+      <div class="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800">
+        <table class="w-full">
+          <thead class="bg-zinc-950">
+            <tr>
+              <th class="text-left p-6 font-medium text-zinc-300">Modelo</th>
+              <th class="text-right p-6 font-medium text-zinc-300">À Vista</th>
+              <th class="text-right p-6 font-medium text-zinc-300">PIX</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-zinc-800 text-lg">
+            <tr><td class="p-6">iPhone 15 Pro 128GB</td><td class="p-6 text-right">R$ 4.299,90</td><td class="p-6 text-right text-emerald-400">R$ 4.199,90</td></tr>
+            <tr><td class="p-6">iPhone 15 Pro 256GB</td><td class="p-6 text-right">R$ 4.799,90</td><td class="p-6 text-right text-emerald-400">R$ 4.699,90</td></tr>
+            <tr><td class="p-6">iPhone 15 Pro Max 256GB</td><td class="p-6 text-right">R$ 4.999,90</td><td class="p-6 text-right text-emerald-400">R$ 4.899,90</td></tr>
+            <tr><td class="p-6">iPhone 16 Pro 128GB</td><td class="p-6 text-right">R$ 5.399,90</td><td class="p-6 text-right text-emerald-400">R$ 5.299,90</td></tr>
+            <tr><td class="p-6">iPhone 16 Pro 256GB</td><td class="p-6 text-right">R$ 5.599,90</td><td class="p-6 text-right text-emerald-400">R$ 5.499,90</td></tr>
+            <tr><td class="p-6">iPhone 16 Pro Max 256GB</td><td class="p-6 text-right">R$ 6.199,90</td><td class="p-6 text-right text-emerald-400">R$ 6.099,90</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- IPADS -->
+    <section id="ipads" class="mb-20">
+      <h2 class="section-title flex items-center gap-4 mb-10">iPads</h2>
+      <div class="space-y-12">
+
+        <!-- iPad 10ª Geração -->
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <h3 class="text-xl font-bold mb-6">iPad 10ª Geração | 10.9"</h3>
+          <div class="grid md:grid-cols-2 gap-8 text-lg">
+            <div class="flex justify-between"><span>64GB</span><span class="text-right"><span class="price-vista">R$ 2.799,90</span><br><span class="price-pix">PIX R$ 2.699,90</span></span></div>
+            <div class="flex justify-between"><span>256GB</span><span class="text-right"><span class="price-vista">R$ 3.299,90</span><br><span class="price-pix">PIX R$ 3.199,90</span></span></div>
+          </div>
+        </div>
+
+        <!-- iPad 11ª Geração -->
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <h3 class="text-xl font-bold mb-6">iPad 11ª Geração | 10.9"</h3>
+          <div class="grid md:grid-cols-2 gap-8 text-lg">
+            <div class="flex justify-between"><span>128GB</span><span class="text-right"><span class="price-vista">R$ 2.999,90</span><br><span class="price-pix">PIX R$ 2.899,90</span></span></div>
+            <div class="flex justify-between"><span>256GB</span><span class="text-right"><span class="price-vista">R$ 3.899,90</span><br><span class="price-pix">PIX R$ 3.799,90</span></span></div>
+          </div>
+        </div>
+
+        <!-- iPad Air 2024 11" e 13" M2 -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="card rounded-3xl p-8 border border-zinc-800">
+            <h3 class="text-xl font-bold mb-6">iPad Air 2024 11" • M2</h3>
+            <div class="space-y-5 text-lg">
+              <div class="flex justify-between"><span>128GB</span><span class="text-right"><span class="price-vista">R$ 4.399,90</span><br><span class="price-pix">PIX R$ 4.299,90</span></span></div>
+              <div class="flex justify-between"><span>256GB</span><span class="text-right"><span class="price-vista">R$ 5.199,90</span><br><span class="price-pix">PIX R$ 5.099,90</span></span></div>
+            </div>
+          </div>
+          <div class="card rounded-3xl p-8 border border-zinc-800">
+            <h3 class="text-xl font-bold mb-6">iPad Air 2024 13" • M2</h3>
+            <div class="space-y-5 text-lg">
+              <div class="flex justify-between"><span>128GB</span><span class="text-right"><span class="price-vista">R$ 5.299,90</span><br><span class="price-pix">PIX R$ 5.199,90</span></span></div>
+              <div class="flex justify-between"><span>256GB</span><span class="text-right"><span class="price-vista">R$ 6.099,90</span><br><span class="price-pix">PIX R$ 5.999,90</span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- iPad Pro 2024 -->
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <h3 class="text-xl font-bold mb-6">iPad Pro 2024</h3>
+          <div class="grid grid-cols-2 gap-12 text-lg">
+            <div>
+              <p class="font-semibold mb-4">11" • M4</p>
+              <div class="space-y-5">
+                <div class="flex justify-between"><span>256GB</span><span class="text-right"><span class="price-vista">R$ 6.599,90</span><br><span class="price-pix">PIX R$ 6.499,90</span></span></div>
+                <div class="flex justify-between"><span>512GB</span><span class="text-right"><span class="price-vista">R$ 8.899,90</span><br><span class="price-pix">PIX R$ 8.799,90</span></span></div>
+              </div>
+            </div>
+            <div>
+              <p class="font-semibold mb-4">13" • M4</p>
+              <div class="space-y-5">
+                <div class="flex justify-between"><span>256GB</span><span class="text-right"><span class="price-vista">R$ 8.999,90</span><br><span class="price-pix">PIX R$ 8.899,90</span></span></div>
+                <div class="flex justify-between"><span>512GB</span><span class="text-right"><span class="price-vista">R$ 10.599,90</span><br><span class="price-pix">PIX R$ 10.499,90</span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- iPad mini -->
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="card rounded-3xl p-8 border border-zinc-800">
+            <h3 class="text-xl font-bold mb-6">iPad mini 6ª Geração 8.3"</h3>
+            <div class="flex justify-between text-lg"><span>64GB</span><span class="text-right"><span class="price-vista">R$ 2.999,90</span><br><span class="price-pix">PIX R$ 2.899,90</span></span></div>
+          </div>
+          <div class="card rounded-3xl p-8 border border-zinc-800">
+            <h3 class="text-xl font-bold mb-6">iPad mini 7ª Geração 8.3"</h3>
+            <div class="space-y-5 text-lg">
+              <div class="flex justify-between"><span>128GB</span><span class="text-right"><span class="price-vista">R$ 3.799,90</span><br><span class="price-pix">PIX R$ 3.699,90</span></span></div>
+              <div class="flex justify-between"><span>256GB</span><span class="text-right"><span class="price-vista">R$ 4.499,90</span><br><span class="price-pix">PIX R$ 4.399,90</span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WATCHES -->
+    <section id="watches" class="mb-20">
+      <h2 class="section-title flex items-center gap-4 mb-10">Watches Novos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <p class="font-bold text-lg">Apple Watch SE 2 40mm GPS</p>
+          <div class="text-right mt-6">
+            <div class="price-vista">R$ 2.199,90</div>
+            <div class="price-pix">PIX R$ 2.099,90</div>
+          </div>
+        </div>
+
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <p class="font-bold text-lg">Apple Watch SE 2 44mm GPS</p>
+          <div class="text-right mt-6">
+            <div class="price-vista">R$ 2.499,90</div>
+            <div class="price-pix">PIX R$ 2.399,90</div>
+          </div>
+        </div>
+
+        <div class="card rounded-3xl p-8 border border-zinc-800 col-span-1 lg:col-span-3">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+              <p class="font-semibold">Series 10 Alumínio 42mm</p>
+              <div class="text-right mt-4"><span class="price-vista">R$ 2.799,90</span><br><span class="price-pix">PIX R$ 2.699,90</span></div>
+            </div>
+            <div>
+              <p class="font-semibold">Series 10 Titânio 42mm</p>
+              <div class="text-right mt-4"><span class="price-vista">R$ 5.399,90</span><br><span class="price-pix">PIX R$ 5.299,90</span></div>
+            </div>
+            <div>
+              <p class="font-semibold">Series 11 Alumínio 42mm</p>
+              <div class="text-right mt-4"><span class="price-vista">R$ 3.199,90</span><br><span class="price-pix">PIX R$ 3.099,90</span></div>
+            </div>
+            <div>
+              <p class="font-semibold">Series 11 Alumínio 46mm</p>
+              <div class="text-right mt-4"><span class="price-vista">R$ 3.499,90</span><br><span class="price-pix">PIX R$ 3.399,90</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card rounded-3xl p-8 text-center col-span-1 lg:col-span-3 border border-zinc-800">
+          <p class="font-bold text-2xl">Apple Watch Ultra 3 49mm GPS + Celular</p>
+          <div class="text-4xl mt-6 text-white">R$ 5.899,90</div>
+          <div class="text-xl text-zinc-400">PIX R$ 5.799,90</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MACBOOKS -->
+    <section id="macbooks" class="mb-20">
+      <h2 class="section-title flex items-center gap-4 mb-10">MacBooks Novos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="card rounded-3xl p-8 border border-zinc-800">
+          <p class="font-bold mb-4 text-lg">MacBook Air M3 13.6" 8GB</p>
+          <div class="space-y-3 text-lg">
+            <div>256GB • <span class="price-vista">R$ 6.699,90</span> <span class="text-zinc-400">(vista)</span></div>
+            <div>512GB • <span class="price-vista">R$ 7.899,90</span> <span class="text-zinc-400">(vista)</span></div>
+          </div>
+        </div>
+        <!-- Adicione mais cards de MacBook aqui conforme necessário -->
+      </div>
+    </section>
+
+    <!-- ACESSÓRIOS -->
+    <section id="acessorios" class="mb-20">
+      <h2 class="section-title flex items-center gap-4 mb-10">Acessórios</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card rounded-3xl p-8 flex justify-between items-center border border-zinc-800">
+          <div class="text-lg">Magic Keyboard c/ Touch ID USB-C</div>
+          <div class="text-right font-bold text-xl">R$ 1.699,90</div>
+        </div>
+        <div class="card rounded-3xl p-8 flex justify-between items-center border border-zinc-800">
+          <div class="text-lg">Magic Keyboard c/ Touch ID + Teclado Numérico</div>
+          <div class="text-right font-bold text-xl">R$ 1.899,90</div>
+        </div>
+        <div class="card rounded-3xl p-8 flex justify-between items-center border border-zinc-800">
+          <div class="text-lg">Magic Trackpad USB-C</div>
+          <div class="text-right font-bold text-xl">R$ 1.599,90</div>
+        </div>
+        <div class="card rounded-3xl p-8 flex justify-between items-center border border-zinc-800">
+          <div class="text-lg">Magic Mouse USB-C</div>
+          <div class="text-right font-bold text-xl">R$ 899,90</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="bg-zinc-950 py-12 text-center text-zinc-500 text-sm border-t border-zinc-800">
+    <p>Mobile Store • Quaraí/RS • Preços válidos em abril/2026</p>
+    <p class="mt-2">Dúvidas? Chama no WhatsApp! 📲</p>
+  </footer>
+</body>
+</html>
