@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Mobile Store</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f2f2f2;
+}
+
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pix {
+    font-size: 14px;
+    color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>📱 Mobile Store</h1>
+<p>Tabela Completa</p>
+</header>
+
+<div class="container">
+
+<h2>🔥 iPhones Novos</h2>
+<div class="grid">
+
+<div class="card"><h3>iPhone 16E</h3><p>128GB</p><p class="price">PIX: R$ 3.799,90</p></div>
+<div class="card"><h3>iPhone 16E</h3><p>256GB</p><p class="price">PIX: R$ 4.499,90</p></div>
+
+<div class="card"><h3>iPhone 17E</h3><p>128GB</p><p class="price">PIX: R$ 4.799,90</p></div>
+<div class="card"><h3>iPhone 17E</h3><p>256GB</p><p class="price">PIX: R$ 5.499,90</p></div>
+
+<div class="card"><h3>iPhone 15</h3><p>128GB</p><p class="price">PIX: R$ 4.299,90</p></div>
+<div class="card"><h3>iPhone 15</h3><p>256GB</p><p class="price">PIX: R$ 5.099,90</p></div>
+
+<div class="card"><h3>iPhone 16</h3><p>128GB</p><p class="price">PIX: R$ 5.299,90</p></div>
+
+<div class="card"><h3>iPhone 17</h3><p>256GB</p><p class="price">PIX: R$ 5.799,90</p></div>
+<div class="card"><h3>iPhone 17</h3><p>512GB</p><p class="price">PIX: R$ 6.999,90</p></div>
+
+<div class="card"><h3>iPhone Air</h3><p>256GB</p><p class="price">PIX: R$ 6.099,90</p></div>
+
+<div class="card"><h3>iPhone 17 Pro</h3><p>256GB</p><p class="price">PIX: R$ 8.199,90</p></div>
+<div class="card"><h3>iPhone 17 Pro</h3><p>512GB</p><p class="price">PIX: R$ 10.199,90</p></div>
+<div class="card"><h3>iPhone 17 Pro</h3><p>1TB</p><p class="price">PIX: R$ 11.099,90</p></div>
+<div class="card"><h3>iPhone 17 Pro</h3><p>2TB</p><p class="price">PIX: R$ 13.499,90</p></div>
+
+<div class="card"><h3>iPhone 17 Pro Max</h3><p>256GB</p><p class="price">PIX: R$ 8.899,90</p></div>
+<div class="card"><h3>iPhone 17 Pro Max</h3><p>512GB</p><p class="price">PIX: R$ 10.999,90</p></div>
+<div class="card"><h3>iPhone 17 Pro Max</h3><p>1TB</p><p class="price">PIX: R$ 11.799,90</p></div>
+<div class="card"><h3>iPhone 17 Pro Max</h3><p>2TB</p><p class="price">PIX: R$ 13.799,90</p></div>
+
+</div>
+
+
+<h2>♻️ iPhones Seminovos</h2>
+<div class="grid">
+
+<div class="card"><h3>iPhone 13</h3><p>128GB</p><p class="price">PIX: R$ 2.599,90</p></div>
+<div class="card"><h3>iPhone 14</h3><p>128GB</p><p class="price">PIX: R$ 2.899,90</p></div>
+<div class="card"><h3>iPhone 15</h3><p>128GB</p><p class="price">PIX: R$ 3.499,90</p></div>
+<div class="card"><h3>iPhone 15 Plus</h3><p>128GB</p><p class="price">PIX: R$ 3.899,90</p></div>
+<div class="card"><h3>iPhone 16</h3><p>128GB</p><p class="price">PIX: R$ 4.499,90</p></div>
+<div class="card"><h3>iPhone 16 Plus</h3><p>128GB</p><p class="price">PIX: R$ 4.899,90</p></div>
+
+</div>
+
+
+<h2>⚡ iPhones Pro Seminovos</h2>
+<div class="grid">
+
+<div class="card"><h3>iPhone 15 Pro</h3><p>128GB</p><p class="price">PIX: R$ 4.199,90</p></div>
+<div class="card"><h3>iPhone 15 Pro</h3><p>256GB</p><p class="price">PIX: R$ 4.699,90</p></div>
+<div class="card"><h3>iPhone 15 Pro Max</h3><p>256GB</p><p class="price">PIX: R$ 4.899,90</p></div>
+
+<div class="card"><h3>iPhone 16 Pro</h3><p>128GB</p><p class="price">PIX: R$ 5.299,90</p></div>
+<div class="card"><h3>iPhone 16 Pro</h3><p>256GB</p><p class="price">PIX: R$ 5.499,90</p></div>
+<div class="card"><h3>iPhone 16 Pro Max</h3><p>256GB</p><p class="price">PIX: R$ 6.099,90</p></div>
+
+</div>
+
+
+<h2>📲 iPads</h2>
+<div class="grid">
+
+<div class="card"><h3>iPad 10ª Geração</h3><p>64GB</p><p class="price">PIX: R$ 2.699,90</p></div>
+<div class="card"><h3>iPad 10ª Geração</h3><p>256GB</p><p class="price">PIX: R$ 3.199,90</p></div>
+
+<div class="card"><h3>iPad 11ª Geração</h3><p>128GB</p><p class="price">PIX: R$ 2.899,90</p></div>
+<div class="card"><h3>iPad 11ª Geração</h3><p>256GB</p><p class="price">PIX: R$ 3.799,90</p></div>
+
+<div class="card"><h3>iPad Air M2</h3><p>128GB</p><p class="price">PIX: R$ 4.299,90</p></div>
+<div class="card"><h3>iPad Air M2</h3><p>256GB</p><p class="price">PIX: R$ 5.099,90</p></div>
+
+<div class="card"><h3>iPad Air M3</h3><p>128GB</p><p class="price">PIX: R$ 4.799,90</p></div>
+
+<div class="card"><h3>iPad Pro M4</h3><p>256GB</p><p class="price">PIX: R$ 6.499,90</p></div>
+<div class="card"><h3>iPad Pro M4</h3><p>512GB</p><p class="price">PIX: R$ 8.799,90</p></div>
+
+</div>
+
+
+<h2>⌚ Apple Watch</h2>
+<div class="grid">
+
+<div class="card"><h3>Apple Watch SE 2</h3><p>40mm</p><p class="price">PIX: R$ 2.099,90</p></div>
+<div class="card"><h3>Apple Watch SE 2</h3><p>44mm</p><p class="price">PIX: R$ 2.399,90</p></div>
+
+<div class="card"><h3>Apple Watch Series 10</h3><p>42mm</p><p class="price">PIX: R$ 2.699,90</p></div>
+<div class="card"><h3>Apple Watch Series 10</h3><p>46mm</p><p class="price">PIX: R$ 3.199,90</p></div>
+
+<div class="card"><h3>Apple Watch Ultra 3</h3><p>49mm</p><p class="price">PIX: R$ 5.799,90</p></div>
+
+</div>
+
+
+<h2>💻 MacBooks</h2>
+<div class="grid">
+
+<div class="card"><h3>MacBook Air M3</h3><p>256GB</p><p class="price">PIX: R$ 6.599,90</p></div>
+<div class="card"><h3>MacBook Air M4</h3><p>256GB</p><p class="price">PIX: R$ 7.299,90</p></div>
+
+<div class="card"><h3>MacBook Pro M4</h3><p>512GB</p><p class="price">PIX: R$ 13.299,90</p></div>
+<div class="card"><h3>MacBook Pro M4 Pro</h3><p>1TB</p><p class="price">PIX: R$ 19.099,90</p></div>
+
+</div>
+
+
+<h2>🎧 Acessórios</h2>
+<div class="grid">
+
+<div class="card"><h3>Apple Pencil 1</h3><p class="price">R$ 999,90</p></div>
+<div class="card"><h3>Apple Pencil 2</h3><p class="price">R$ 899,90</p></div>
+<div class="card"><h3>Apple Pencil USB-C</h3><p class="price">R$ 899,90</p></div>
+
+<div class="card"><h3>Magic Mouse</h3><p class="price">R$ 899,90</p></div>
+<div class="card"><h3>Magic Keyboard</h3><p class="price">R$ 1.699,90</p></div>
+<div class="card"><h3>Magic Trackpad</h3><p class="price">R$ 1.599,90</p></div>
+
+</div>
+
+</div>
+
+</body>
+</html>
